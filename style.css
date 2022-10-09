@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@700&display=swap');
+
 body{
 
     
@@ -34,6 +36,27 @@ body{
     padding: 0;
 }
 
+header{
+    
+    color: var(--primary-700);
+    display: flex;
+    align-items: center;
+    padding: 40px 60px;
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.main_content{
+    padding: 34px 64px;
+    background-color: #F6F6F9;
+}
+
+.title_car_text{
+    font-size: 24px;
+    font-weight: 600;
+    color: var(--secondary-300);
+   
+}
 .rental_button{
     background-color: var(--primary-500);
     border: none;
@@ -88,6 +111,10 @@ input.text::placeholder{
 }
 
 select{
+    background-image: url('assets/down_arrow.svg');
+    background-position: 95% 50%;
+    background-repeat: no-repeat;
+    appearance: none;
     outline: none;
     box-sizing: border-box;
     height: 53px;
@@ -98,5 +125,122 @@ select{
     font-weight: 400;
     border: 1px solid var(--secondary-400);
     background-color: var(--primary-0);
-    color: var(--secondary-900);
+    color: var(--secondary-900)
+}
+
+.image {
+    height: 100px;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-sizing: border-box;
+    padding: 24px;
+    background-color: var(--primary-0);
+    border-radius: 10px;
+    width: 300px;
+}
+
+.card .main_title{
+    font-weight:700;
+    font-size: 20px;
+    color: var(--secondary-500);
+    width: 100%;
+    margin-bottom: 4px;
+}
+
+.card .sub_title{
+    font-weight:700;
+    font-size: 14px;
+    color: var(--secondary-300);
+    margin-bottom: 50px;
+}
+.card_footer .price{
+    display: flex;
+    width: 100%;
+    font-weight: 700;
+    align-items: baseline;
+}
+.price .dollars{
+    font-size:20px;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+}
+.price .day{
+    color: var(--secondary-300);
+    font-size: 14px;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    margin-left: 3px;
+   
+}
+
+.card .stats{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 16px;
+
+}
+
+.card .stat{
+    display: flex;
+    color: var(--secondary-300);
+    font-size: 14px;
+    font-weight: 400;
+    align-items: center;
+}
+
+.card_footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    align-self: flex-end;
+    
+}
+
+
+.card .image{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.card .car_and_stats{
+    display: flex;
+    flex-direction: column;
+}
+
+.favorite_car, .recommanded_car{
+    display: flex;
+    gap: 32px;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-between;
+    margin-top: 30px;
+    box-sizing: border-box;
+}   
+.stat.places{
+    width: max-content;
+}
+   
+
+
+@media screen and (max-width:800px){
+    .image img{
+        width: 100%;
+    }
+    .card .car_and_stats {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .card .stats{
+        flex-direction: column;
+        width: fit-content;
+    }
+
+    .card .sub_title{
+        margin-bottom: 16px;
+    }
 }
