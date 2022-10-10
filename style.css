@@ -217,15 +217,42 @@ select{
     gap: 32px;
     flex-wrap: wrap;
     width: 100%;
-    justify-content: space-between;
+    justify-content: space-evenly;
     margin-top: 30px;
     box-sizing: border-box;
 }   
 .stat.places{
     width: max-content;
 }
-   
+a{
+    text-decoration: none;
+    
+}
 
+.information_perso{
+    background-color: var(--primary-0);
+}
+
+div.input_type{
+    display: flex;
+    flex-direction: column;
+    padding: 0 24px;
+}
+.input_type input{
+    margin: 16px;
+    box-sizing: border-box;
+}
+div.name_and_phone, div.adress_and_city{
+    display: flex;
+    
+    gap: 32px;
+    
+}
+
+.name, .phone , .adress, .city{
+    display: flex;
+    flex-direction: column;
+}
 
 @media screen and (max-width:800px){
     .image img{
