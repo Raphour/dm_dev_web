@@ -213,11 +213,12 @@ select{
 }
 
 .favorite_car, .recommanded_car{
+    
     display: flex;
     gap: 32px;
     flex-wrap: wrap;
     width: 100%;
-    justify-content: space-evenly;
+    justify-content: flex-start;
     margin-top: 30px;
     box-sizing: border-box;
 }   
@@ -229,31 +230,49 @@ a{
     
 }
 
-.information_perso{
+.info_perso, .date_location{
     background-color: var(--primary-0);
+    width: fit-content;
+    border-radius: 10px;
+    padding: 24px;
 }
 
 div.input_type{
     display: flex;
     flex-direction: column;
-    padding: 0 24px;
+    width: fit-content;
+    
 }
 .input_type input{
     margin: 16px;
     box-sizing: border-box;
+   
 }
-div.name_and_phone, div.adress_and_city{
+div.two_input{
     display: flex;
-    
+    width: fit-content;
     gap: 32px;
     
 }
 
-.name, .phone , .adress, .city{
+.label_input{
     display: flex;
     flex-direction: column;
 }
+.title{
+    margin-bottom: 30px;
+}
+.main_title{
+    font-size: 20px;
+    color: var(--secondary-500);
+    font-weight: 700;
+}
 
+.sub_title{
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--secondary-300);
+}
 @media screen and (max-width:800px){
     .image img{
         width: 100%;
