@@ -11,32 +11,91 @@
     <title>Paiement</title>
 </head>
 <body>
-    <div class="info_perso">
-        <div class="tite">
-            <div class="main_title">Informations personnelles</div>
-            <div class="sub_title">Merci de remplir vos informations personnelles</div>
+    <header>Voituragogo</header>
+    <div class="main_content">
+        <div class="info_perso">
+            <div class="title">
+                <div class="main_title">Informations personnelles</div>
+                <div class="sub_title">Merci de remplir vos informations personnelles</div>
+            </div>
+            <div class="input_type">
+                <div class="two_input">
+                    <div class="label_input">
+                        <label for="nom">Nom</label>
+                        <input placeholder="Simon Strueux" type="text" class="text" id="nom">
+                    </div>
+                    <div class="label_input">
+                        <label for="phone">Numéro de téléphone</label>
+                        <input placeholder="0123456789" type="number" class="text" id="phone">
+                    </div>
+                </div>
+                <div class="two_input">
+                    <div class="label_input">
+                        <label for="adress">Adresse</label>
+                        <input placeholder="2 Rue de la Poésie" type="text" class="text" id="adress">
+                    </div>
+                    <div class="label_input">
+                        <label for="city">VIlle</label>
+                        <input placeholder="Nantes" type="text" class="text" id="city">
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="input_type">
-            <div class="name_and_phone">
-                <div class="name">
-                    <label for="nom">Nom</label>
-                    <input placeholder="Simon Strueux" type="text" class="text" id="nom">
+        <div class="location">
+            <div class="title">
+                <div class="main_title">Location</div>
+                <div class="sub_title">Merci de préciser les dates de location</div>
+            </div>
+            <div class="date_location">
+                <div class="debut">
+                    Début de location
                 </div>
-                <div class="phone">
-                    <label for="phone">Numéro de téléphone</label>
-                    <input placeholder="0123456789" type="number" class="text" id="phone">
+                <div class="two_input">
+                    <div class="city">
+                        <label for="select_debut"></label>
+                        <select class="custom_select"  name="select" id="select_debut">
+                            <option value="deauville">Deauville</option>
+                            <option value="deauville">Nantes</option>
+                            <option value="deauville">Lille</option>
+                            <option value="deauville">Dunkerque</option>
+                        </select>
+                    </div>
+                    <div class="label_input">
+                        <label for="date_debut">Début</label>
+                        <input placeholder="Placeholder" type="date" class="text" id="date_debut">
+                    </div>
+                </div>
+                <div class="label_input">
+                    <label for="hour_debut">Heure</label>
+                    <input placeholder="Placeholder" type="time" class="text" id="text">
+
+                </div>
+                <div class="fin">
+                    Fin de location
+                </div>
+                <div class="two_input">
+                    <div class="label_input">
+                        <label for="select"></label>
+                        <select class="custom_select"  name="select_fin" id="select">
+                            <option value="deauville">Deauville</option>
+                            <option value="deauville">Nantes</option>
+                            <option value="deauville">Lille</option>
+                            <option value="deauville">Dunkerke</option>
+                        </select>
+                    </div>
+                    <div class="label_input"> <label for="date_fin">Date</label>
+                        <input placeholder="Placeholder" type="date" class="text" id="date_fin">
+                    </div>
+
+                </div>
+                <div class="label_input">
+                    <label for="hour_fin">Heure</label>
+                    <input placeholder="Placeholder" type="time" class="text" id="text">
+
                 </div>
             </div>
-            <div class="adress_and_city">
-                <div class="adress">
-                    <label for="adress">Adresse</label>
-                    <input placeholder="2 Rue de la Poésie" type="text" class="text" id="adress">
-                </div>
-                <div class="city">
-                    <label for="city">VIlle</label>
-                    <input placeholder="Nantes" type="text" class="text" id="city">
-                </div>
-            </div>
+        </div>
+            <div class="date_location"></div>
         </div>
     </div>
 </body>
