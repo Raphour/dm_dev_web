@@ -230,7 +230,7 @@ a{
     
 }
 
-.info_perso, .location, .methode_paiement{
+.info_perso, .location, .methode_paiement, .confirm{
     background-color: var(--primary-0);
     width: 60%;
     border-radius: 10px;
@@ -290,7 +290,7 @@ div.two_input{
     margin-bottom: 24px;
 }
 
-.check_and_logo{
+.radio_and_logo{
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -313,7 +313,7 @@ div:has(input[type="radio"]:checked) +  .card_info{
 }
 .methode{
     background-color: var(--secondary-100);
-    padding: 24px;
+    padding: 16px;
     border-radius: 10px;
     display: flex;
     flex-direction: column;
@@ -321,6 +321,11 @@ div:has(input[type="radio"]:checked) +  .card_info{
     align-content: center;
     height:fit-content ;
     margin: 12px;
+}
+
+.footer_checkbox{
+    display: flex;
+    flex-direction: column;
 }
 
 @media screen and (max-width:800px){

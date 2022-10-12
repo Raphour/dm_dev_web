@@ -55,10 +55,10 @@
                     <div class="label_input">
                         <label for="select_debut">Ville</label>
                         <select class="custom_select"  name="select" id="select_debut">
-                            <option value="deauville">Deauville</option>
+                            <option value="deauville">Paris</option>
                             <option value="deauville">Nantes</option>
-                            <option value="deauville">Lille</option>
-                            <option value="deauville">Dunkerque</option>
+                            <option value="deauville">Bordeaux</option>
+                            <option value="deauville">Marseille</option>
                         </select>
                     </div>
                     <div class="label_input">
@@ -83,10 +83,10 @@
                     <div class="label_input">
                         <label for="select">Ville</label>
                         <select class="custom_select"  name="select_fin" id="select">
-                            <option value="deauville">Deauville</option>
+                            <option value="deauville">Paris</option>
                             <option value="deauville">Nantes</option>
-                            <option value="deauville">Lille</option>
-                            <option value="deauville">Dunkerke</option>
+                            <option value="deauville">Bordeaux</option>
+                            <option value="deauville">Marseille</option>
                         </select>
                     </div>
                     <div class="label_input"> <label for="date_fin">Date</label>
@@ -110,13 +110,17 @@
                 <div class="main_title">Méthode de paiement</div>
                 <div class="sub_title">Merci de renseigner vos informations de paiement</div>
                 <div class="methode cb">
-                    <div class="check_and_logo">
-                        <div class="check_label">
+                    <div class="radio_and_logo">
+                        <div class="radio_label">
                             <input type="radio" name="methode" id="cb">
                             <label for="cb">Carte de crédit</label>
                             
                         </div>
-                        <img src="assets/visa.svg" alt="Logo visa">
+                        <div>
+                            <img src="assets/visa.svg" alt="Logo visa">
+                            <img src="assets/mastercard.svg" alt="Logo mastercard">
+                        </div>
+                        
                     </div>
                     <div  class="card_info">
                         <div class="two_input">
@@ -144,8 +148,8 @@
                     </div>
                 </div>
                 <div class="methode paypal">
-                    <div class="check_and_logo">
-                        <div class="check_label">
+                    <div class="radio_and_logo">
+                        <div class="radio_label">
                             <input type="radio" name="methode" id="paypal">
                             <label for="paypal">Paypal</label>
                         </div>
@@ -153,14 +157,33 @@
                     </div>
                 </div>
                 <div class="methode bitcoin">
-                    <div class="check_and_logo">
-                        <div class="check_label">
+                    <div class="radio_and_logo">
+                        <div class="radio_label">
                             <input type="radio" name="methode" id="bitcoin">
                             <label for="bitcoin">Bitcoin</label>
                         </div>
                         <img src="assets/Bitcoin.svg" alt="Logo bitcoins">
                     </div>
                 </div>
+            </div>
+
+            <div class="confirm">
+                <div class="title">
+                    <div class="main_title">Confirmation</div>
+                    <div class="sub_title">Nous arrivons vers la fin. Juste quelques clics et votre location est prête!</div>
+                </div>
+                <div class="footer_checkbox">
+                    <div >
+                        <input type="checkbox" name="offres" id="offres">
+                        <label for="offres">J'accepte de recevoir des offres promotionelles</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="conditions" id="conditions">
+                        <label for="conditions">J’accepte les conditions de vente et la politique privée du site.</label>
+                    </div>
+                    
+                </div>
+                <button class="rental_button">Louer</button>
             </div>
         </form>
         
