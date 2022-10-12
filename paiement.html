@@ -12,6 +12,7 @@
 </head>
 <body>
     <header>Voituragogo</header>
+    <form action="">
     <div class="main_content">
         <div class="info_perso">
             <div class="title">
@@ -51,8 +52,8 @@
                     Début de location
                 </div>
                 <div class="two_input">
-                    <div class="city">
-                        <label for="select_debut"></label>
+                    <div class="label_input">
+                        <label for="select_debut">Ville</label>
                         <select class="custom_select"  name="select" id="select_debut">
                             <option value="deauville">Deauville</option>
                             <option value="deauville">Nantes</option>
@@ -75,7 +76,7 @@
                 </div>
                 <div class="two_input">
                     <div class="label_input">
-                        <label for="select"></label>
+                        <label for="select">Ville</label>
                         <select class="custom_select"  name="select_fin" id="select">
                             <option value="deauville">Deauville</option>
                             <option value="deauville">Nantes</option>
@@ -95,8 +96,64 @@
                 </div>
             </div>
         </div>
-            <div class="date_location"></div>
-        </div>
-    </div>
+            <div class="methode_paiement">
+                <div class="main_title">Méthode de paiement</div>
+                <div class="sub_title">Merci de renseigner vos informations de paiement</div>
+                <div class="methode cb">
+                    <div class="check_and_logo">
+                        <div class="check_label">
+                            <input type="radio" name="methode" id="cb">
+                            <label for="cb">Carte de crédit</label>
+                            
+                        </div>
+                        <img src="assets/visa.svg" alt="Logo visa">
+                    </div>
+                    <div  class="card_info">
+                        <div class="two_input">
+                            <div class="label_input">
+                                <label for="card_number">Numéro de carte</label>
+                                <input placeholder="Placeholder" type="number" class="text" id="card_number">
+                            </div>
+                            <div class="label_input">
+                                
+                                    <label for="date_exp">Date d'expiration</label>
+                                    <input placeholder="Placeholder" type="date" class="text" id="date_exp">
+                                
+                            </div>
+                        </div>
+                        <div class="two_input">
+                            <div class="label_input">
+                                <label for="card_name">Nom sur la carte</label>
+                                <input placeholder="Placeholder" type="text" class="text" id="card_name">
+                            </div>
+                            <div class="label_input">
+                                <label for="card_cvv">CVC</label>
+                                <input placeholder="Placeholder" type="number" min="0" max="999" class="text" id="card_cvv">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="methode paypal">
+                    <div class="check_and_logo">
+                        <div class="check_label">
+                            <input type="radio" name="methode" id="paypal">
+                            <label for="paypal">Paypal</label>
+                        </div>
+                        <img src="assets/PayPal.svg" alt="Logo paypal">
+                    </div>
+                </div>
+                <div class="methode bitcoin">
+                    <div class="check_and_logo">
+                        <div class="check_label">
+                            <input type="radio" name="methode" id="bitcoin">
+                            <label for="bitcoin">Bitcoin</label>
+                        </div>
+                        <img src="assets/Bitcoin.svg" alt="Logo bitcoins">
+                    </div>
+                </div>
+            </div>
+        </form>
+        
+    
 </body>
 </html>

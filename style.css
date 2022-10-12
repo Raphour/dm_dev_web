@@ -118,7 +118,7 @@ select{
     outline: none;
     box-sizing: border-box;
     height: 53px;
-    width: 386px;
+    width: 50%;
     border-radius: 10px;
     padding: 16px 32px;
     font-size: 14px;
@@ -230,11 +230,12 @@ a{
     
 }
 
-.info_perso, .date_location{
+.info_perso, .location, .methode_paiement{
     background-color: var(--primary-0);
-    width: fit-content;
+    width: 60%;
     border-radius: 10px;
     padding: 24px;
+    margin: 20px 0;
 }
 
 div.input_type{
@@ -243,14 +244,10 @@ div.input_type{
     width: fit-content;
     
 }
-.input_type input{
-    margin: 16px;
-    box-sizing: border-box;
-   
-}
+
 div.two_input{
     display: flex;
-    width: fit-content;
+    width: 100%;
     gap: 32px;
     
 }
@@ -258,9 +255,20 @@ div.two_input{
 .label_input{
     display: flex;
     flex-direction: column;
+
+}
+.label_input label{
+    font-weight: 700;
+    color: var(--secondary-500);
+}
+
+.label_input input, .label_input select{
+    margin: 16px 0;
+    box-sizing: border-box;
+    width: 100%;
 }
 .title{
-    margin-bottom: 30px;
+    margin-bottom: 32px;
 }
 .main_title{
     font-size: 20px;
@@ -272,6 +280,45 @@ div.two_input{
     font-size: 14px;
     font-weight: 400;
     color: var(--secondary-300);
+}
+
+.debut, .fin{
+    font-weight: 600;
+    font-size: 16px; 
+    color: var(--secondary-500);
+    margin-bottom: 24px;
+}
+
+.check_and_logo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    width: 100%;
+    
+    
+}
+.cb .check_and_logo{
+    margin-bottom: 32px;
+}
+
+.card_info{
+    display: none;
+}
+
+div:has(input[type="radio"]:checked) +  .card_info{
+    
+    display: block;
+}
+.methode{
+    background-color: var(--secondary-100);
+    padding: 24px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    height:fit-content ;
 }
 @media screen and (max-width:800px){
     .image img{
