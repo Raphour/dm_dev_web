@@ -36,7 +36,7 @@
                         <input placeholder="2 Rue de la Poésie" type="text" class="text" id="adress">
                     </div>
                     <div class="label_input">
-                        <label for="city">VIlle</label>
+                        <label for="city">Ville</label>
                         <input placeholder="Nantes" type="text" class="text" id="city">
                     </div>
                 </div>
@@ -66,10 +66,15 @@
                         <input placeholder="Placeholder" type="date" class="text" id="date_debut">
                     </div>
                 </div>
-                <div class="label_input">
-                    <label for="hour_debut">Heure</label>
-                    <input placeholder="Placeholder" type="time" class="text" id="text">
-
+                <div class="two_input">
+                    <div class="label_input">
+                        <label for="hour_debut">Heure</label>
+                        <input placeholder="Placeholder" type="time" class="text" id="text">
+                    
+                    </div>
+                    <div style="width: 100%;">
+                        <!-- Div utile pour le bon positionnement de la div "heure" -->
+                    </div>
                 </div>
                 <div class="fin">
                     Fin de location
@@ -89,10 +94,15 @@
                     </div>
 
                 </div>
-                <div class="label_input">
-                    <label for="hour_fin">Heure</label>
-                    <input placeholder="Placeholder" type="time" class="text" id="text">
-
+                <div class="two_input">
+                    <div class="label_input">
+                        <label for="hour_fin">Heure</label>
+                        <input placeholder="Placeholder" type="time" class="text" id="text">
+                    
+                    </div>
+                    <div style="width: 100%;">
+                        <!-- Div utile pour le bon positionnement de la div "heure" -->
+                    </div>
                 </div>
             </div>
         </div>
@@ -112,23 +122,23 @@
                         <div class="two_input">
                             <div class="label_input">
                                 <label for="card_number">Numéro de carte</label>
-                                <input placeholder="Placeholder" type="number" class="text" id="card_number">
+                                <input placeholder="1234 5678 1234 5678" type="number" class="text" id="card_number">
                             </div>
                             <div class="label_input">
                                 
                                     <label for="date_exp">Date d'expiration</label>
-                                    <input placeholder="Placeholder" type="date" class="text" id="date_exp">
+                                    <input placeholder="mm/aa"  type="month" class="text" id="date_exp">
                                 
                             </div>
                         </div>
                         <div class="two_input">
                             <div class="label_input">
                                 <label for="card_name">Nom sur la carte</label>
-                                <input placeholder="Placeholder" type="text" class="text" id="card_name">
+                                <input placeholder="Simon Strueux" type="text" class="text" id="card_name">
                             </div>
                             <div class="label_input">
                                 <label for="card_cvv">CVC</label>
-                                <input placeholder="Placeholder" type="number" min="0" max="999" class="text" id="card_cvv">
+                                <input placeholder="123" type="number" min="0" max="999" class="text" id="card_cvv">
                             </div>
                         </div>
                     </div>
