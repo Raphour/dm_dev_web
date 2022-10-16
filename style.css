@@ -48,7 +48,7 @@ header{
 
 .main_content{
     padding: 34px 64px;
-    background-color: #F6F6F9;
+    
 }
 
 .title_car_text{
@@ -67,6 +67,10 @@ header{
     font-size: 16px;
     box-sizing: border-box;
     
+}
+
+.rental_button.final_button{
+    margin-top: 96px;
 }
 
 .rental_button:hover{
@@ -328,6 +332,21 @@ div:has(input[type="radio"]:checked) +  .card_info{
     flex-direction: column;
 }
 
+.footer_checkbox label{
+    font-weight: 600;
+    font-size: 16px;
+    color: var(--secondary-500);
+    margin-left: 22px;
+}
+
+.display{
+    display: flex;
+    flex-direction: row;
+    background-color: #F6F6F9;
+}
+.left-side{
+    background-color: red;
+}
 @media screen and (max-width:800px){
     .image img{
         width: 100%;
