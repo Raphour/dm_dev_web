@@ -234,12 +234,13 @@ a{
     
 }
 
-.info_perso, .location, .methode_paiement, .confirm{
+.field{
     background-color: var(--primary-0);
-    width: 60%;
+    width: 100%;
     border-radius: 10px;
     padding: 24px;
     margin: 20px 0;
+    box-sizing: border-box;
 }
 
 div.input_type{
@@ -343,9 +344,51 @@ div:has(input[type="radio"]:checked) +  .card_info{
     display: flex;
     flex-direction: row;
     background-color: #F6F6F9;
+    
 }
 .left-side{
     background-color: red;
+    width: 100%;
+}
+.car_and_name{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    
+}
+
+.car_and_name .car_name{
+    font-size: 32px;
+    font-weight: 700;
+    color: var(--secondary-500);
+    margin-left: 16px;
+}
+
+hr{
+    border : 0;
+    border-top: 1px solid var(--secondary-100);
+    height: 1px;
+    outline: none;
+    margin: 32px 0;
+    
+}
+
+.text_and_price .text{
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--secondary-300);
+}
+.text_and_price .price{
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--secondary-500);
+}
+.text_and_price {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    
 }
 @media screen and (max-width:800px){
     .image img{
