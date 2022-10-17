@@ -46,10 +46,8 @@ header{
     font-weight: 700;
 }
 
-.main_content{
-    padding: 34px 64px;
-    
-}
+
+
 
 .title_car_text{
     font-size: 24px;
@@ -68,6 +66,8 @@ header{
     box-sizing: border-box;
     
 }
+
+
 
 .rental_button.final_button{
     margin-top: 96px;
@@ -88,6 +88,16 @@ header{
 .rental_button:disabled{
     opacity: 0.4;
     cursor: not-allowed;
+}
+
+.secondary_button{
+    border: 1px solid var(--secondary-400);
+    border-radius: 4px;
+    padding: 9px 16px;
+    background-color: #FFFFFF;
+    color: var(--secondary-500);
+    font-weight: 600;
+    width: 25%;
 }
 
 input.text{
@@ -167,7 +177,7 @@ select{
     font-weight: 700;
     align-items: baseline;
 }
-.price .dollars{
+.price .dollars, .price{
     font-size:20px;
     font-family: 'Plus Jakarta Sans', sans-serif;
 }
@@ -276,6 +286,10 @@ div.two_input{
 .title{
     margin-bottom: 32px;
 }
+.total-price .title{
+    margin-bottom: 0;
+
+}
 .main_title{
     font-size: 20px;
     color: var(--secondary-500);
@@ -346,10 +360,7 @@ div:has(input[type="radio"]:checked) +  .card_info{
     background-color: #F6F6F9;
     
 }
-.left-side{
-    background-color: red;
-    width: 100%;
-}
+
 .car_and_name{
     display: flex;
     flex-direction: row;
@@ -390,6 +401,21 @@ hr{
     align-items: center;
     
 }
+
+.promo-code{
+    display:flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.total-price{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 24px;
+    
+}
 @media screen and (max-width:800px){
     .image img{
         width: 100%;
@@ -407,3 +433,10 @@ hr{
         margin-bottom: 16px;
     }
 }
+.left-side{
+    width: 100%;
+}
+.right-side, .left-side{
+    padding: 32px;
+}
+
