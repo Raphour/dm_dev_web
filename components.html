@@ -1,62 +1,241 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">    <title>Composants</title>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Paiement</title>
 </head>
 <body>
-    <a href="index.html">Index</a>
-    <button  class="rental_button">Label</button>
-    <label for="text">Label</label>
-    <input placeholder="Placeholder" type="text" class="text" id="text">
-
-    <select class="custom_select"  name="select" id="select">
-        <option value="deauville">Paris</option>
-        <option value="deauville">Nantes</option>
-        <option value="deauville">Bordeaux</option>
-        <option value="deauville">Marseille</option>
-    </select>
-
-    <div class="card">
-        <div class="title">
-            <div class="main_title">CR-V</div>
-            <div class="sub_title">SUV</div>
-        </div>
-        <div class="car_and_stats">
-            <div class="image">
-                <img src="assets/Car-10.svg" alt="Image CR-V">
-            </div>
-            <div class="stats">
-                <div class="stat conso">
-                    <img src="assets/fuel.svg" alt="Image pompe à essence">
-                    <div class="icon_text">80L</div>
+    <header>Voituragogo</header>
+    <div class="display">
+        <div class="left-side">
+        <form action="">
+        
+            <div class="field info_perso">
+                <div class="title">
+                    <div class="main_title">Informations personnelles</div>
+                    <div class="sub_title">Merci de remplir vos informations personnelles</div>
                 </div>
-                <div class="stat boite_vitesse">
-                    <img src="assets/steering_wheel.svg" alt="Image Volant">
-                    <div class="icon_text">Manuel</div>
-                </div>
-                <div class="stat places">
-                    <img src="assets/places.svg" alt="Image Personnes">
-                    <div class="icon_text">6 places</div>
+                <div class="input_type">
+                    <div class="two_input">
+                        <div class="label_input">
+                            <label for="nom">Nom</label>
+                            <input placeholder="Simon Strueux" type="text" class="text" id="nom">
+                        </div>
+                        <div class="label_input">
+                            <label for="phone">Numéro de téléphone</label>
+                            <input placeholder="0123456789" type="number" class="text" id="phone">
+                        </div>
+                    </div>
+                    <div class="two_input">
+                        <div class="label_input">
+                            <label for="adress">Adresse</label>
+                            <input placeholder="2 Rue de la Poésie" type="text" class="text" id="adress">
+                        </div>
+                        <div class="label_input">
+                            <label for="city">Ville</label>
+                            <input placeholder="Nantes" type="text" class="text" id="city">
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="card_footer">
-            <div class="price">
-                <div class="dollars">$80.00/</div>
-                <div class="day">day</div>
-            </div>
-            <div class="rental_button">Louer</div>
-        </div>
-    </div>
+            <div class="location field">
+                <div class="title">
+                    <div class="main_title">Location</div>
+                    <div class="sub_title">Merci de préciser les dates de location</div>
+                </div>
+                <div class="date_location">
+                    <div class="debut">
+                        Début de location
+                    </div>
+                    <div class="two_input">
+                        <div class="label_input">
+                            <label for="select_debut">Ville</label>
+                            <select class="custom_select"  name="select" id="select_debut">
+                                <option value="deauville">Paris</option>
+                                <option value="deauville">Nantes</option>
+                                <option value="deauville">Bordeaux</option>
+                                <option value="deauville">Marseille</option>
+                            </select>
+                        </div>
+                        <div class="label_input">
+                            <label for="date_debut">Début</label>
+                            <input placeholder="Placeholder" type="date" class="text" id="date_debut">
+                        </div>
+                    </div>
+                    <div class="two_input">
+                        <div class="label_input">
+                            <label for="hour_debut">Heure</label>
+                            <input placeholder="Placeholder" type="time" class="text" id="text">
+                        
+                        </div>
+                        <div style="width: 100%;">
+                            <!-- Div utile pour le bon positionnement de la div "heure" -->
+                        </div>
+                    </div>
+                    <div class="fin">
+                        Fin de location
+                    </div>
+                    <div class="two_input">
+                        <div class="label_input">
+                            <label for="select">Ville</label>
+                            <select class="custom_select"  name="select_fin" id="select">
+                                <option value="deauville">Paris</option>
+                                <option value="deauville">Nantes</option>
+                                <option value="deauville">Bordeaux</option>
+                                <option value="deauville">Marseille</option>
+                            </select>
+                        </div>
+                        <div class="label_input"> <label for="date_fin">Date</label>
+                            <input placeholder="Placeholder" type="date" class="text" id="date_fin">
+                        </div>
 
-    <button class="secondary_button">
-        Appliquer
-    </button>
+                    </div>
+                    <div class="two_input">
+                        <div class="label_input">
+                            <label for="hour_fin">Heure</label>
+                            <input placeholder="Placeholder" type="time" class="text" id="text">
+                        
+                        </div>
+                        <div style="width: 100%;">
+                            <!-- Div utile pour le bon positionnement de la div "heure" -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+                <div class="methode_paiement field">
+                    <div class="main_title">Méthode de paiement</div>
+                    <div class="sub_title">Merci de renseigner vos informations de paiement</div>
+                    <div class="methode cb">
+                        <div class="radio_and_logo">
+                            <div class="radio_label">
+                                <input type="radio" name="methode" id="cb">
+                                <label for="cb">Carte de crédit</label>
+                                
+                            </div>
+                            <div>
+                                <img src="assets/visa.svg" alt="Logo visa">
+                                <img src="assets/mastercard.svg" alt="Logo mastercard">
+                            </div>
+                            
+                        </div>
+                        <div  class="card_info">
+                            <div class="two_input">
+                                <div class="label_input">
+                                    <label for="card_number">Numéro de carte</label>
+                                    <input placeholder="1234 5678 1234 5678" type="number" class="text" id="card_number">
+                                </div>
+                                <div class="label_input">
+                                    
+                                        <label for="date_exp">Date d'expiration</label>
+                                        <input placeholder="mm/aa"  type="month" class="text" id="date_exp">
+                                    
+                                </div>
+                            </div>
+                            <div class="two_input">
+                                <div class="label_input">
+                                    <label for="card_name"> Nom sur la carte</label>
+                                    <input placeholder="Simon Strueux" type="text" class="text" id="card_name">
+                                </div>
+                                <div class="label_input">
+                                    <label for="card_cvv">CVC</label>
+                                    <input placeholder="123" type="number" min="0" max="999" class="text" id="card_cvv">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="methode paypal">
+                        <div class="radio_and_logo">
+                            <div class="radio_label">
+                                <input type="radio" name="methode" id="paypal">
+                                <label for="paypal">Paypal</label>
+                            </div>
+                            <img src="assets/PayPal.svg" alt="Logo paypal">
+                        </div>
+                    </div>
+                    <div class="methode bitcoin">
+                        <div class="radio_and_logo">
+                            <div class="radio_label">
+                                <input type="radio" name="methode" id="bitcoin">
+                                <label for="bitcoin">Bitcoin</label>
+                            </div>
+                            <img src="assets/Bitcoin.svg" alt="Logo bitcoins">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="confirm field">
+                    <div class="title">
+                        <div class="main_title">Confirmation</div>
+                        <div class="sub_title">Nous arrivons vers la fin. Juste quelques clics et votre location est prête!</div>
+                    </div>
+                    <div class="footer_checkbox">
+                        <div >
+                            <input type="checkbox" name="offres" id="offres">
+                            <label for="offres">J'accepte de recevoir des offres promotionelles</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="conditions" id="conditions">
+                            <label for="conditions">J’accepte les conditions de vente et la politique privée du site.</label>
+                        </div>
+                        
+                    </div>
+                    <button class="final_button rental_button">Louer</button>
+                </div>
+            </form>
+            </div>
+            
+            
+            <div class="right-side">
+                
+                <div class="field">
+                    <div class="title">
+                        <div class="main_title">
+                            Résumé de la location
+                        </div>
+                        <div class="sub_title">Les prix peuvent changer selon la durée de la location et le prix de la voiture.
+                        </div>
+                    </div>
+                    <div class="car_and_name">
+                        <img src="assets/car_preview.svg" alt="Image voiture séléctionée">
+                        <div class="car_name">Nissan GT-R</div>
+                    </div>
+                    <hr>
+                    <div class="text_and_price">
+                        <div class="text">Sous-total</div>
+                        <div class="price">80€</div>
+                    </div>
+                    <div class="text_and_price">
+                        <div class="text">Taxes</div>
+                        <div class="price">0€</div>
+                    </div>
+                    
+                
+                    <div class="promo-code">
+                        <label for="promo_code">Code promo</label>
+                        <input placeholder="XXXXXXX" class="text" type="text" name="promo_code" id="promo_code">
+                        <button class="secondary_button">Appliquer</button>
+                        
+                    </div>
+                    <div class="total-price">
+                        <div class="title">
+                            <div class="main_title">Prix total</div>
+                            <div class="sub_title">Prix total incluant les remises</div>
+                        </div>
+                        <div class="price">
+                            80€
+                        </div>
+                    </div>
+
+                
+            </div>
+        </div>
+        
+    
 </body>
 </html>
