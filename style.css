@@ -25,7 +25,7 @@ body{
     --secondary-200:#C3D4BF;
     --secondary-100:#E0E9F4;
 
-
+    background-color: #F6F7F9;
 
 
 }
@@ -44,10 +44,13 @@ header{
     padding: 40px 60px;
     font-size: 32px;
     font-weight: 700;
+    background-color: var(--primary-0);
 }
 
 
-
+.main_content{
+    padding: 32px 64px;
+}
 
 .title_car_text{
     font-size: 24px;
@@ -250,7 +253,7 @@ a{
     border-radius: 10px;
     padding: 24px;
     margin: 20px 0;
-    box-sizing: border-box;
+    box-sizing:border-box;
 }
 
 div.input_type{
@@ -416,6 +419,16 @@ hr{
     margin-top: 24px;
     
 }
+
+.debut, .fin{
+    font-family: 'Plus Jakarta Sans', sans-serif;
+}
+@media screen and (min-width:799px) {
+    .left-side{
+        width: 100%;
+    }
+    
+}
 @media screen and (max-width:800px){
     .image img{
         width: 100%;
@@ -432,11 +445,35 @@ hr{
     .card .sub_title{
         margin-bottom: 16px;
     }
+    .card{
+        width: 100%;
+    }
+    .display{
+        flex-direction:column-reverse;
+        width: 100%;
+    }
+    .main_content{
+        padding: 0;
+        
+    }
+    div.two_input{
+        flex-direction: column;
+        gap: 10px   ;
+    }
+    .right-side{
+        padding-bottom: 0 !important;
+    }
+    .rental_button.final_button{
+        margin-top:20px ;
+    }
+
+    
+    
+    
 }
-.left-side{
-    width: 100%;
-}
+
 .right-side, .left-side{
     padding: 32px;
+   
 }
 
