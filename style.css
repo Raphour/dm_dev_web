@@ -47,10 +47,22 @@ header{
     background-color: var(--primary-0);
 }
 
-
+/* MISE EN PAGE */
 .main_content{
     padding: 32px 64px;
 }
+
+.favorite_car, .recommanded_car{
+    
+    display: flex;
+    gap: 32px;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: flex-start;
+    margin-top: 30px;
+    box-sizing: border-box;
+}  
+
 
 .title_car_text{
     font-size: 24px;
@@ -58,6 +70,8 @@ header{
     color: var(--secondary-300);
    
 }
+
+/* BOUTON PRIMAIRE */
 .rental_button{
     background-color: var(--primary-500);
     border: none;
@@ -69,8 +83,6 @@ header{
     box-sizing: border-box;
     
 }
-
-
 
 .rental_button.final_button{
     margin-top: 96px;
@@ -93,6 +105,8 @@ header{
     cursor: not-allowed;
 }
 
+
+/* BOUTON SECONDAIRE */
 .secondary_button{
     border: 1px solid var(--secondary-400);
     border-radius: 4px;
@@ -100,9 +114,11 @@ header{
     background-color: #FFFFFF;
     color: var(--secondary-500);
     font-weight: 600;
-    width: 25%;
+    width: fit-content;
 }
 
+
+/* INPUT */
 input.text{
     outline: none;
     box-sizing: border-box;
@@ -127,6 +143,8 @@ input.text::placeholder{
     color: var(--secondary-300);
 }
 
+
+/* SELECT */
 select{
     background-image: url('assets/down_arrow.svg');
     background-position: 95% 50%;
@@ -148,6 +166,8 @@ select{
 .image {
     height: 100px;
 }
+
+/* Cartes  du catalogue*/
 
 .card{
     display: flex;
@@ -229,24 +249,15 @@ select{
     flex-direction: column;
 }
 
-.favorite_car, .recommanded_car{
-    
-    display: flex;
-    gap: 32px;
-    flex-wrap: wrap;
-    width: 100%;
-    justify-content: flex-start;
-    margin-top: 30px;
-    box-sizing: border-box;
-}   
+ 
 .stat.places{
     width: max-content;
 }
 a{
     text-decoration: none;
-    
 }
 
+/* Element renfermant plusieurs input et le titre de la "section"  */
 .field{
     background-color: var(--primary-0);
     width: 100%;
@@ -256,6 +267,7 @@ a{
     box-sizing:border-box;
 }
 
+/*  Element ne renfermant que les input et les labels */
 div.input_type{
     display: flex;
     flex-direction: column;
@@ -263,6 +275,7 @@ div.input_type{
     
 }
 
+/* Classe permettant de mettre en place deux input côte à côte avec flex */
 div.two_input{
     display: flex;
     width: 100%;
@@ -270,6 +283,7 @@ div.two_input{
     
 }
 
+/* Classe mettant en place un input et son label */
 .label_input{
     display: flex;
     flex-direction: column;
@@ -286,6 +300,8 @@ div.two_input{
     box-sizing: border-box;
     width: 100%;
 }
+/* Propriétés des titres */
+
 .title{
     margin-bottom: 32px;
 }
@@ -312,6 +328,7 @@ div.two_input{
     margin-bottom: 24px;
 }
 
+/* Classe mettant en place les radio button et les logos des moyens de paiement */
 .radio_and_logo{
     display: flex;
     justify-content: space-between;
@@ -329,16 +346,20 @@ div.two_input{
     width: 100%;
 }
 
-div:has(input[type="radio"]:checked) +  .card_info{
+/* div:has(input[type="radio"]:checked) +  .card_info{
     
+    display: block;
+} */
+
+.cb > input[type="radio"]:checked + .card_info{
     display: block;
 }
 .methode{
     background-color: var(--secondary-100);
-    padding: 16px;
+    padding: 16px 32px;
     border-radius: 10px;
     display: flex;
-    flex-direction: column;
+    flex-direction: column; 
     align-items: center;
     align-content: center;
     height:fit-content ;
@@ -361,6 +382,9 @@ div:has(input[type="radio"]:checked) +  .card_info{
     display: flex;
     flex-direction: row;
     background-color: #F6F6F9;
+    padding: 32px;
+    gap: 32px;
+    box-sizing: border-box;
     
 }
 
@@ -472,8 +496,4 @@ hr{
     
 }
 
-.right-side, .left-side{
-    padding: 32px;
-   
-}
 
