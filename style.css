@@ -365,7 +365,7 @@ div.two-input{
 
 
 .card-info{
-   
+    display: none;
     margin-top:32px ;
     width: 100%;
 }
@@ -376,14 +376,22 @@ div.two-input{
 }  */
 
 
+input[type="radio"]#cb:checked ~ .card-info{
+    display: block;
+}
+
+.logo-card{
+    float: right;
+}
+
+
+
 .methode{
     background-color: var(--secondary-100);
     padding: 16px 32px;
     border-radius: 10px;
-    display: flex;
-    flex-direction: column; 
-    align-items: center;
-    align-content: center;
+    
+    
     height:fit-content ;
     margin: 12px;
 }
@@ -518,6 +526,7 @@ hr{
         border-radius: 10px;
         padding: 10px 16px;
         margin-bottom:20px ;
+        display: flex;
         
     }
 
