@@ -27,21 +27,21 @@
                         <div class="two-input">
                             <div class="label-input">
                                 <label for="nom">Nom</label>
-                                <input required placeholder="Simon Strueux" type="text" class="text" id="nom">
+                                <input required placeholder="Simon Strueux" type="text" class="text" id="nom" name="nom">
                             </div>
                             <div class="label-input">
                                 <label for="phone">Numéro de téléphone</label>
-                                <input required placeholder="0123456789" type="number" class="text" id="phone">
+                                <input required placeholder="0123456789" type="number" class="text" id="phone" name="phone">
                             </div>
                         </div>
                         <div class="two-input">
                             <div class="label-input">
                                 <label for="adress">Adresse</label>
-                                <input required placeholder="2 Rue de la Poésie" type="text" class="text" id="adress">
+                                <input required placeholder="2 Rue de la Poésie" type="text" class="text" id="adress" name="adress">
                             </div>
                             <div class="label-input">
                                 <label for="city">Ville</label>
-                                <input required placeholder="Nantes" type="text" class="text" id="city">
+                                <input required placeholder="Nantes" type="text" class="text" id="city" name="city">
                             </div>
                         </div>
                     </div>
@@ -67,13 +67,13 @@
                             </div>
                             <div class="label-input">
                                 <label for="date-debut">Début</label>
-                                <input required placeholder="Placeholder" type="date" class="text" id="date-debut">
+                                <input required placeholder="Placeholder" type="date" class="text" id="date-debut" name="date-debut">
                             </div>
                         </div>
                         <div class="two-input">
                             <div class="label-input">
                                 <label for="hour-debut">Heure</label>
-                                <input required placeholder="Placeholder" type="time" class="text" id="text">
+                                <input required placeholder="Placeholder" type="time" class="text" id="text" name="date-debut">
 
                             </div>
                             <div style="width: 100%;">
@@ -94,14 +94,14 @@
                                 </select>
                             </div>
                             <div class="label-input"> <label for="date-fin">Date</label>
-                                <input required placeholder="Placeholder" type="date" class="text" id="date-fin">
+                                <input required placeholder="Placeholder" type="date" class="text" id="date-fin" name="date-fin">
                             </div>
 
                         </div>
                         <div class="two-input">
                             <div class="label-input">
                                 <label for="hour-fin">Heure</label>
-                                <input required placeholder="Placeholder" type="time" class="text" id="text">
+                                <input required placeholder="Placeholder" type="time" class="text" id="hour" name="hour">
 
                             </div>
                             <div style="width: 100%;">
@@ -127,24 +127,24 @@
                             <div class="two-input">
                                 <div class="label-input">
                                     <label for="card-number">Numéro de carte</label>
-                                    <input placeholder="1234 5678 1234 5678" maxlength="16" type="number" class="text"
-                                        id="card-number">
+                                    <input required placeholder="1234 5678 1234 5678" maxlength="16" type="number" class="text"
+                                        id="card-number" name="card-number">
                                 </div>
                                 <div class="label-input">
 
                                     <label for="date-exp">Date d'expiration</label>
-                                    <input placeholder="mm/aa" type="month" class="text" id="date-exp">
+                                    <input required placeholder="mm/aa" type="month" class="text" id="date-exp" name="date-exp">
 
                                 </div>
                             </div>
                             <div class="two-input">
                                 <div class="label-input">
                                     <label for="card-name"> Nom sur la carte</label>
-                                    <input placeholder="Simon Strueux" type="text" class="text" id="card-name">
+                                    <input required placeholder="Simon Strueux" type="text" class="text" id="card-name" name="date-exp">
                                 </div>
                                 <div class="label-input">
                                     <label for="card-cvv">CVC</label>
-                                    <input placeholder="123" type="number" min="0" max="999" maxlength="3" class="text" id="card-cvv">
+                                    <input required placeholder="123" type="number" min="0" max="999" maxlength="3" class="text" id="card-cvv" name="card-cvv">
                                 </div>
                             </div>
                         </div>
@@ -152,7 +152,7 @@
                     <div class="methode paypal">
                         <div class="radio-and-logo">
                             <div class="radio-label">
-                                <input type="radio" name="methode" id="paypal">
+                                <input type="radio" name="methode" id="paypal" >
                                 <label for="paypal">Paypal</label>
                             </div>
                             <img src="assets/PayPal.svg" alt="Logo paypal">
@@ -177,7 +177,7 @@
                     </div>
                     <div class="footer-checkbox">
                         <div class="conditions">
-                            <input type="checkbox" name="offres" id="offres">
+                            <input type="checkbox" name="offres" id="offres" >
                             <label for="offres">J'accepte de recevoir des offres promotionelles</label>
                         </div>
                         <div class="conditions">
